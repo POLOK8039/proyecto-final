@@ -1,0 +1,43 @@
+.tables .header {
+    padding: 1rem;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tables .header div {
+    display: flex;
+    gap: 1rem;
+}
+
+.tables .header div a {
+    display: contents;
+}
+
+.tables .header div input {
+    background-color: var(--background-dark);
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+}
+
+.tables .header div input:focus {
+    outline: 2px solid var(--blue-dark);
+}
+
+.form-control::placeholder {
+    color: var(--white-dark);
+}
+
+.tables .header ul {
+    display: flex;
+}
+
+.tables .header ul li {
+    padding-left: 1rem;
+    display: flex;
+}
+
+.tables .header ul li a {
+    display: contents;
+}

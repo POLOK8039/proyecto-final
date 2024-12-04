@@ -1,0 +1,81 @@
+.tables {
+    padding: 1rem;
+    margin-left: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tables h1 {
+    text-align: center;
+}
+
+.tables .background {
+    background-color: var(--background-black);
+    border-radius: 2rem;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead tr th {
+    padding: 1rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid var(--background-light);
+    text-align: left;
+    position: relative;
+}
+
+thead tr th:hover {
+    outline: 1px solid var(--background-light);
+}
+
+tbody tr td {
+    border-top: 1px solid var(--background-medium);
+    padding-inline: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--background-dark);
+}
+
+tbody tr:nth-child(even):hover {
+    background-color: var(--background-gray);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--background-deep-gray);
+}
+
+tbody tr:nth-child(odd):hover {
+    background-color: var(--background-gray);
+}
+
+tfoot tr th {
+    padding: 1rem;
+    padding-right: 2rem;
+    border-top: 1px solid var(--background-dark);
+    text-align: left;
+}
+
+.column-order {
+    font-size: 0.5rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.column-order::before {
+    content: "▲";
+    display: block;
+}
+
+.column-order::after {
+    content: "▼";
+    display: block;
+}
+
+td {
+    padding: 0.5rem;
+}

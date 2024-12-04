@@ -1,0 +1,99 @@
+.login {
+    background-color: var(--background-gray);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+.division {
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/********************************************************************************************/
+
+.div-link {
+    display: contents;
+}
+
+.div-link .bi {
+    background-color: var(--background-dark);
+    border-radius: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.div-link:hover .bi {
+    background-color: var(--blue-dark);
+}
+
+/********************************************************************************************/
+
+.form-control {
+    background-color: var(--background-dark);
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.form-control:focus {
+    outline: 2px solid var(--blue-dark);
+}
+
+.form-control::placeholder {
+    color: var(--white-dark);
+}
+
+/********************************************************************************************/
+
+.btn-primary {
+    background-color: var(--blue-dark);
+    font-weight: bold;
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-light);
+}
+
+/********************************************************************************************/
+
+.swapped {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.swapped-right {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+/*******************************************************************************************/
+
+@media (max-width: 500px) {
+    .login {
+        flex-direction: column-reverse;
+    }
+
+    .col-6 {
+        width:100%;
+    }
+
+    .swapped {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    
+    .swapped-right {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,309 @@
+/*:root {
+
+  --background-light: #282A36;      
+  --background-medium: #232530;   
+  --background-gray: #1E1E28;        
+  --background-dark: #1A1B22;       
+  --background-black: #14151A;     
+  --background-light-gray: #393A50; 
+  --background-darker-gray: #323340; 
+  --background-deep-gray: #2A2B38;  
+  --background-charcoal: #1F2027;  
+  --background-almost-black: #121317;
+  --white-light: #EAEAEA;          
+  --white-medium: #C8C8D1;    
+  --white-gray: #A6A6B2;          
+  --white-dark: #6F7180;           
+  --blue-light: #5B8CFF;           
+  --blue-dark: #4175E6;             
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  scroll-behavior: smooth;
+}
+*/
+:root {
+    --background-light: #4A4C58; /* Gris oscuro ligeramente más frío y moderno */
+    --background-medium: #35394C; /* Un tono más frío, que da profundidad */
+    --background-gray: #2A2D3E; /* Gris azulado que aporta una atmósfera profesional */
+    --background-dark: #1D202B; /* Tono oscuro con base en azul para más serenidad */
+    --background-black: #14161D; /* Gris muy oscuro casi negro con un toque más azul */
+    --background-light-gray: #4B4F5F; /* Gris frío suave, no tan brillante, para resaltar elementos secundarios */
+    --background-darker-gray: #292C3D; /* Gris oscuro con sutiles tonos azules */
+    --background-deep-gray: #20232D; /* Gris muy oscuro con un toque minimalista */
+    --background-charcoal: #101213; /* Muy oscuro con un toque de gris, que aporta sofisticación */
+    --background-almost-black: #0D0F14; /* Casi negro, ideal para el fondo principal */
+    
+    --white-light: #F3F5F8; /* Blanco muy suave, mantiene el contraste pero sin ser agresivo */
+    --white-medium: #D1D6E0; /* Gris muy claro con un toque frío */
+    --white-gray: #B1B8C3; /* Gris cálido moderado para detalles sutiles */
+    --white-dark: #7C828C; /* Gris oscuro con un toque frío, ideal para texto secundario */
+    
+    --blue-light: #60A3F4; /* Azul suave y brillante, ideal para botones y enlaces */
+    --blue-dark: #3A6E98; /* Azul más oscuro para resaltar y darle profundidad */
+    
+    --purple-light: #A97CF5; /* Toque de violeta suave para crear dinamismo y contraste */
+    --purple-dark: #6B4BBF; /* Violeta oscuro, para hacer énfasis en ciertos elementos clave */
+    
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Colores de fondo */
+    --background-light: #5B6A7C; /* Gris azulado claro para suavizar el entorno */
+    --background-medium: #2F3D48; /* Gris oscuro, con matices azules, aporta profundidad */
+    --background-gray: #1E2732; /* Gris oscuro con un toque de azul y verde */
+    --background-dark: #141B26; /* Fondo oscuro con matices fríos para un toque profesional */
+    --background-black: #0A0E14; /* Negro profundo con un toque sutil de azul */
+    --background-light-gray: #4C5866; /* Gris más claro y frío, para zonas secundarias */
+    --background-darker-gray: #1A2129; /* Gris más oscuro, ideal para detalles y bordes */
+    --background-deep-gray: #0D1318; /* Gris profundo que ayuda a enfocar contenido */
+    --background-charcoal: #0A0C10; /* Gris carbón oscuro para áreas discretas */
+    --background-almost-black: #05060A; /* Casi negro para detalles sutiles */
+    
+    /* Colores blancos y tonos claros */
+    --white-light: #F1F3F7; /* Blanco frío y luminoso para texto destacado */
+    --white-medium: #D0D6E0; /* Blanco suave con un toque grisáceo para texto secundario */
+    --white-gray: #A6B2C1; /* Gris claro para áreas que requieren menor atención */
+    --white-dark: #5A6574; /* Gris medio para texto en fondo oscuro */
+    
+    /* Colores vibrantes */
+    --blue-light: #4B76F3; /* Azul brillante, moderno y llamativo para elementos clave */
+    --blue-dark: #3B5A9D; /* Azul más oscuro y profesional para llamadas a la acción */
+    
+    /* Espaciado y comportamiento */
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-light: #4A4E58; /* Un tono oscuro más cálido y elegante */
+    --background-medium: #373C44; /* Gris profundo, menos agresivo que el original */
+    --background-gray: #2C2F36; /* Gris más neutro, crea un buen balance */
+    --background-dark: #1C1F24; /* Color profundo, ideal para fondos principales */
+    --background-black: #131517; /* Un negro con matiz ligeramente cálido */
+    --background-light-gray: #3F4349; /* Gris claro con un toque más azulado */
+    --background-darker-gray: #262A30; /* Gris más profundo para secciones secundarias */
+    --background-deep-gray: #1A1D21; /* Gris muy oscuro, casi negro */
+    --background-charcoal: #0E0F11; /* Charcoal moderno y suave */
+    --background-almost-black: #090A0D; /* Un casi negro, el límite oscuro */
+    
+    --white-light: #F4F6F9; /* Blanco cálido, ideal para el texto principal */
+    --white-medium: #D0D2D5; /* Gris suave, adecuado para textos secundarios */
+    --white-gray: #A5A8AC; /* Gris medio, sutil pero efectivo para detalles */
+    --white-dark: #6D7277; /* Gris oscuro, resalta sobre fondos claros */
+    
+    --blue-light: #5C76F0; /* Azul vibrante, pero suave, para elementos activos */
+    --blue-dark: #4C61D0; /* Azul más profundo para resaltar botones y acciones */
+    
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-light: #5A6571; /* Gris cálido moderado */
+    --background-medium: #3E4751; /* Gris azulado medio */
+    --background-gray: #2C343C; /* Gris oscuro con toques azules */
+    --background-dark: #1E2327; /* Gris oscuro con un toque de azul marino */
+    --background-black: #101214; /* Casi negro, muy profundo */
+    --background-light-gray: #4D555F; /* Gris oscuro claro */
+    --background-darker-gray: #252C34; /* Gris muy oscuro con un tono azulado */
+    --background-deep-gray: #1A1F23; /* Gris muy oscuro, casi negro */
+    --background-charcoal: #14171A; /* Gris carbón profundo */
+    --background-almost-black: #0D0F12; /* Muy oscuro, casi negro total */
+    
+    --white-light: #E1E8EB; /* Gris muy claro, casi blanco, con un toque suave */
+    --white-medium: #B0B8BE; /* Gris claro frío */
+    --white-gray: #A3B0B6; /* Gris suave con un toque de azul */
+    --white-dark: #7D8A92; /* Gris oscuro con matices azules */
+    
+    --blue-light: #64A8F5; /* Azul claro con tono vibrante */
+    --blue-dark: #4A72B2; /* Azul más oscuro, intenso y profesional */
+    
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    color: var(--white-medium);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    background-color: var(--background-dark);
+    display: flex;
+    flex-direction: column
+}
+
+.container {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin: auto;
+}
+
+.row {
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col-auto {
+    flex:0 0 auto;
+    width:auto
+}
+
+.col-1 {
+    width:8.33333333%;
+    flex:0 0 auto
+}
+
+.col-2 {
+    width:16.66666667%;
+    flex:0 0 auto
+}
+
+.col-3 {
+    width:25%;
+    flex:0 0 auto
+}
+
+.col-4 {
+    width:33.33333333%;
+    flex:0 0 auto
+}
+
+.col-5 {
+    width:41.66666667%;
+    flex:0 0 auto
+}
+
+.col-6 {
+    width:50%;
+    flex:0 0 auto
+}
+
+.col-7 {
+    width:58.33333333%;
+    flex:0 0 auto
+}
+
+.col-8 {
+    width:66.66666667%;
+    flex:0 0 auto
+}
+
+.col-9 {
+    width:75%;
+    flex:0 0 auto
+}
+
+.col-10 {
+    width:83.33333333%;
+    flex:0 0 auto
+}
+
+.col-11 {
+    width:91.66666667%;
+    flex:0 0 auto
+}
+
+.col-12 {
+    width:100%;
+    flex:0 0 auto
+}
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+
+hr {
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+    border: 1px solid var(--background-medium);
+}
+
+.btn {
+    background-color: var(--blue-dark);
+    color: var(--white-medium);
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.btn-secondary {
+    background: none; 
+    border: none; 
+    color: inherit; 
+    padding: 0; 
+    font: inherit; 
+    cursor: pointer;
+    text-decoration: underline; 
+}
+.btn:hover{
+    background-color: var(--blue-light);
+}
+
+.div-msg {
+    position: fixed;
+    width: 100%;
+    margin-top: 5.9rem;
+    display: flex;
+}
+
+.process-btn{
+    border-radius: 30%;
+    transition: background-color 0.2s ease-in-out;
+}
+.process-btn:hover{
+    background-color: var(--blue-light);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.danger {
+    background-color: #A10;
+}
+
+#success-msg {
+    background-color: green;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+#error-msg {
+    background-color: red;
+    padding: 1rem;
+    margin-left: auto;
+}

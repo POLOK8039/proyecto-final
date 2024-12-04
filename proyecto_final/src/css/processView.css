@@ -1,0 +1,16 @@
+.process {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.process > *{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.bin {
+    width: 160px;
+    height: 160px;
+    padding: 1rem;
+}

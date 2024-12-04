@@ -1,0 +1,4 @@
+mysql -u root -p -e "DROP DATABASE IF EXISTS packaging;"
+mysql -u root -p -e "CREATE DATABASE packaging CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
+sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_general_ci/g' ~/Downloads/backup.sql
+mysql -u root -p packaging < ~/Downloads/backup.sql
